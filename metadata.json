@@ -1,0 +1,6 @@
+{
+  "name": "Sera John's Angel Baptism Invitation",
+  "description": "A delicate, cute angel-themed digital baptism invitation for baby Sera John, daughter of John TH and Ann John, featuring RSVP tracking, ceremony details, and host customizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

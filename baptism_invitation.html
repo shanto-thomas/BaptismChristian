@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holy Sacrament of Baptism | Sera John</title>
+  <meta name="description" content="Baptism invitation of Sera John, daughter of John TH and Ann John at St. Mary's Church, Kottayam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FAF5EE;
+      color: #292524;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      overflow-x: hidden;
+    }
+
+    /* Ambient radial glow */
+    .ambient-glow {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at center, #FFFDF8 0%, #FAF5EE 60%, #EFE4D6 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Main Container */
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 520px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Invitation Card Styling */
+    .invitation-card {
+      position: relative;
+      width: 100%;
+      background: #FAF5EE;
+      border: 1px solid #DFCBB5;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(120, 53, 15, 0.15), 0 0 0 1px rgba(223, 203, 181, 0.4);
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .invitation-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    /* Parent Tribute Ribbon */
+    .parent-ribbon {
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 253, 248, 0.95);
+      backdrop-filter: blur(4px);
+      padding: 5px 16px;
+      border-radius: 9999px;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      box-shadow: 0 2px 6px rgba(120, 53, 15, 0.08);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-style: italic;
+      color: #44403C;
+    }
+
+    .parent-ribbon svg {
+      width: 12px;
+      height: 12px;
+      fill: #982846;
+    }
+
+    /* Fullscreen Loader Overlay */
+    .loader-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      background-color: #FAF5EE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .loader-overlay.hidden {
+      opacity: 0;
+      transform: scale(1.03);
+      pointer-events: none;
+    }
+
+    .loader-card {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      background: #FAF5EE;
+      border: 1px solid #DFCBB5;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(120, 53, 15, 0.2);
+      cursor: pointer;
+    }
+
+    .loader-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+      pointer-events: none;
+    }
+
+    /* Clickable area precisely over the OPEN INVITATION button in the image */
+    .open-btn-trigger {
+      position: absolute;
+      top: 79%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 55%;
+      height: 8.5%;
+      border-radius: 9999px;
+      border: none;
+      background: rgba(255, 255, 255, 0);
+      cursor: pointer;
+      outline: none;
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .open-btn-trigger:hover {
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Parchment Glow -->
+  <div class="ambient-glow"></div>
+
+  <!-- Main Pure HTML Container -->
+  <main class="container">
+    <div class="invitation-card" id="invitationCard">
+      <!-- Authentic Invitation Card Artwork -->
+      <img src="/assets/aistudio/image_9566ce3f.png" alt="Baptism Invitation of Sera John" />
+
+      <!-- Parents Tribute Badge -->
+      <div class="parent-ribbon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span>Parents: John TH &amp; Ann John</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Cute Angel Opening Loader (Pure HTML/CSS) -->
+  <div class="loader-overlay" id="loaderOverlay">
+    <div class="loader-card" id="loaderCard">
+      <!-- Attached Angel Loader Artwork -->
+      <img src="/assets/aistudio/image_c98c4560.png" alt="Sera John - Angel Baptism Opening" />
+
+      <!-- Interactive Trigger directly on the OPEN INVITATION button -->
+      <button type="button" class="open-btn-trigger" id="openTrigger" aria-label="Open Invitation"></button>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript for Audio Chimes & Smooth Transition -->
+  <script>
+    // Celestial Chimes via Web Audio API
+    function playCelestialChime() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        if (ctx.state === 'suspended') ctx.resume();
+
+        // C Major 7th Angelic Chord frequencies
+        const freqs = [523.25, 659.25, 783.99, 987.77, 1046.50];
+        const now = ctx.currentTime;
+
+        freqs.forEach((freq, idx) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+
+          gain.gain.setValueAtTime(0.0001, now + idx * 0.08);
+          gain.gain.exponentialRampToValueAtTime(0.06, now + idx * 0.08 + 0.04);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.08 + 2.0);
+
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+
+          osc.start(now + idx * 0.08);
+          osc.stop(now + idx * 0.08 + 2.1);
+        });
+      } catch (e) {
+        // Audio playback fallback
+      }
+    }
+
+    // Open Invitation Function
+    const loaderOverlay = document.getElementById('loaderOverlay');
+    const loaderCard = document.getElementById('loaderCard');
+    const openTrigger = document.getElementById('openTrigger');
+
+    function openInvitation() {
+      playCelestialChime();
+      if (loaderOverlay) {
+        loaderOverlay.classList.add('hidden');
+        setTimeout(() => {
+          loaderOverlay.style.display = 'none';
+        }, 650);
+      }
+    }
+
+    if (loaderCard) {
+      loaderCard.addEventListener('click', openInvitation);
+    }
+    if (openTrigger) {
+      openTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openInvitation();
+      });
+    }
+  </script>
+</body>
+</html>
